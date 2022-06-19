@@ -1,0 +1,196 @@
+h2 {
+    color: #562EFF;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    font-family: 'Poppins ';
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    background-color: #E5E5E5;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    width: 870px;
+
+}
+
+.top-player {
+    margin-left: 50px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    /* margin-top: 56px; */
+
+}
+
+.player img {
+    height: 56px;
+    width: 56px;
+}
+
+hr {
+    border: 1px solid rgb(168, 164, 164);
+}
+
+.top-blog {
+    margin-left: 50px;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.blogs .thumbnail img {
+    /* position: absolute; */
+    height: 117px;
+    width: 100px;
+}
+
+.blog {
+    display: flex;
+
+}
+
+.blog-info {
+    margin-left: 16px;
+}
+
+.blog-author {
+    color: #9F9F9F;
+    font-family: 'Poppins';
+}
+
+.blog-author a {
+    text-decoration: none;
+}
+
+.lates-course {
+    margin-top: 63px;
+    margin-left: 28px;
+    /* width: 870px;
+    height: 362px; */
+}
+
+.courses {
+    margin-top: 11px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.course {
+    Width: 252.42px;
+    /* Height: 269.79px */
+}
+
+.course .thumbnail img {
+    /* position: absolute; */
+    margin-top: 13px;
+    width: 224px;
+    height: 104px;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+}
+
+.fa-star.empty {
+    color: #AEAEAE;
+}
+
+.duration {
+    background-color: #FF4A60;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.6913px;
+    border-radius: 5px;
+    line-height: 20px;
+}
+
+/* media queries
+ Mobile device
+  */
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,
+    .blog {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog {
+        margin-bottom: 30px;
+    }
+
+    .courses {
+
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .course {
+        margin-bottom: 40px;
+        margin-left: 130px;
+
+    }
+}
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .player {
+        justify-content: center;
+
+    }
+
+    .course {
+        margin-bottom: 40px;
+    }
+}

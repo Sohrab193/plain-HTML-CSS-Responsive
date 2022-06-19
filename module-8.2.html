@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module-8.2</title>
+    <style>
+        .container {
+            display: flex;
+            border: 2px dashed rosybrown;
+            height: 350px;
+
+        }
+
+        .box {
+
+            width: 150px;
+            border: 2px solid rebeccapurple;
+
+        }
+
+        #box-1 {
+            /* flex-grow: 1; */
+            order: 2;
+        }
+
+        #box-2 {
+            flex-grow: 1;
+            order: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flex-Box</h1>
+    <h1>Flex-Direction</h1>
+
+    <div class="container">
+        <div id="box-1" class="box">BOX-1</div>
+        <div id="box-2" class="box">BOX-2</div>
+
+    </div>
+
+</body>
+
+</html>

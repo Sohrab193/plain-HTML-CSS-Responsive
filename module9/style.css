@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(214, 210, 210);
+}
+
+.image img {
+    height: 50px;
+    width: 50px;
+}
+
+h2 {
+    margin-left: 50px;
+}
+
+h4 {
+    margin-left: 15px;
+}
+
+.player,
+.blog {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.top-player {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container {
+    width: 870px;
+    background-color: white;
+
+}
+
+span {
+    margin-left: 5px;
+}
+
+.top-blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.blog .image img {
+    height: 70px;
+    width: 100px;
+}
+
+.blog span {
+    color: rgba(129, 129, 228, 0.793);
+}
+
+/* hr {
+    margin-left: 50px;
+    margin-right: 10px;
+} */
+
+/* .player-blog:hover {
+    border: 2px solid rgb(16, 115, 180);
+    /* width: 75%;
+    background-color: white; */
+}
+
+*/
